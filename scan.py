@@ -37,7 +37,7 @@ def read_ip_list_from_csv(file_path):
             reader = csv.DictReader(csvfile)
 
             if 'Address' not in reader.fieldnames:
-                print("Error: 'IP Address' column tidak ada di CSV file.")
+                print("Error: 'Address' column tidak ada di CSV file.")
                 sys.exit(1)
             
             for row in reader:
